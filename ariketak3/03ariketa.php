@@ -1,6 +1,6 @@
 <?php
 if(isset($_GET["bikoitiak"])){
-    $alderdiBikoitiak = $_GET["bikoitiak"];
+    $alderdiBikoitiak = $_GET["bikoitiak"] == "true" ? true : false;;
     if($alderdiBikoitiak){
         $limitea=random_int(1,99);
         echo "Auzaz hartutako zenbakia: " . $limitea . "<br>";

@@ -1,7 +1,7 @@
 <?php
 if(isset($_GET["zenbakia"])){
     $lehena=$_GET["zenbakia"];
-    $segida="1 ";
+    $segida="2 ";
     $lehena_da=true;
     $i=3;
     while($i<$lehena){
