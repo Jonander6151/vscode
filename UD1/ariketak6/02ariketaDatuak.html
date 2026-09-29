@@ -1,0 +1,22 @@
+<!DOCTYPE html lan="eus">
+<html>
+    <head>
+        <title>Ariketa2</title>
+    </head>
+
+    <body>
+        <h2>Datu pertsonalak(Formularioa)</h2>
+        <form action="02ariketaDatuak.php" method="post">
+            Idatzi hurrengo datuak:<br><br>
+            <b>Izena: </b><input type="text" name="izena">
+            <b> Abizenak: </b><input type="text" name="abizena">
+            <b> Adina: </b><input type="number" name="adina"><br><br>
+            <b> Pisua: </b><input type="number" name="pisua">
+            <b> Sexua: </b> <input type="radio" name="sexua" value="gizona">Gizona<input type="radio" name="sexua" value="emekumea">Emakumea
+            <b>Estatu zibila: </b><input type="radio" name="estatuZibila" value="ezkonduta"> Ezkonduta<input type="radio" name="estatuZibila" value="bakarrik"> Bakarrik<input type="radio" name="estatuZibila" value="bestebat"> Beste bat<br><br>
+            <b>Afizioak: </b><input type="checkbox" name="afizioa[]" value="zinea"> Zinea <input type="checkbox" name="afizioa[]" value="literatura"> Literatura <input type="checkbox" name="afizioa[]" value="tebeoa"> Tebeoa <br><br>
+            <input type="checkbox" name="afizioa[]" value="kirola"> Kirola <input type="checkbox" name="afizioa[]" value="musika"> Musika <input type="checkbox" name="afizioa[]" value="telebista"> Telebista <br><br>
+            <button type="submit" name="bidali">Bidali</button>  <button type="reset" name="borratu">Ezabatu</button>
+        </form>
+    </body>
+</html>
