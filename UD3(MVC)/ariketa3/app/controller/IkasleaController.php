@@ -5,7 +5,10 @@ class IkasleaController{
     public function erakutsiDenak(){
         $ikasleDatuak=Ikaslea::getIkasleak();
         require_once __DIR__ . "/../view/Hasiera.php";
-}
+    }
+    public function  gehituIkasleak(){
+        
+    }
 }
 
 ?>

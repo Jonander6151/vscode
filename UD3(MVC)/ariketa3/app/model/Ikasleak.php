@@ -7,12 +7,16 @@ class Ikaslea{
         if ($mysqli->connect_errno) {
             echo "Akatsa MySQL konexioan: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
         }
-        return $mysqli->query("SELECT izena, email, irakasgaia FROM ikasleak ikas INNER JOIN irakasgaiak irak WHERE ikas.id=irak.ikasle_id;")->fetchAll();
+        return $mysqli->query("SELECT izena, email FROM ikasleak;");
     }
-    public static function updateIkasleak(){
+
+    public static function updateIkasleak(int $id,string $izena, string $emaila){
 
     }
-    public static function deleteIkasleak(){
+    public static function deleteIkasleak(int $id){
+        
+    }   
+    public static function createIkasleak(string $izena, string $emaila){
 
     }
 }
